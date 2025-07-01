@@ -1,12 +1,10 @@
-Substrant is an organization dedicated to providing utilities for both developers and end-users.
-Our main focus is to develop flexible and versatile solutions that meet a wide range of needs,
-from general applications to specific use cases.
+Substrant is a cybersecurity-focused organization building resilient infrastructure and intelligent tools for developers, businesses, and power users. Our team consists of self-taught engineers across the globe—people who build out of passion, not obligation.
 
-We are a handful of self-taught developers from across the world, each committed to advancing the 
-technological field by creating modern solutions to modern problems. Our backgrounds  and shared 
-drive for innovation motivates us to deliver high-quality projects.
+We build flexible systems designed to scale, stay stable under pressure, and stay out of your way. We also develop internal tools for security testing and simulation—built to help teams evaluate their defenses and understand real-world threats.
 
-For more information about our organization, visit our website: [substrant.dev](https://substrant.dev/).
+> Whether you're locking down your backend, looking for tools that won’t betray you, or just need something that actually works—Substrant delivers reliable, high-impact solutions without the enterprise bloat.
+
+Visit us at [substrant.com](https://substrant.com/)
 
 <!--
 
