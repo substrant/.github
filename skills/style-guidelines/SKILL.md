@@ -11,12 +11,12 @@ Approach formatting as a senior principal engineer enforcing architectural integ
 
 Formatting is not taste; it is communication. A strict, consistent house style MUST be applied to all languages in the repository. Match the surrounding code; you MUST NOT reformat to personal preference.
 
-**Braces carry the structure.** K&R braces MUST be used: the opening brace MUST be on the same line as the enclosing declaration or control keyword, and the closing brace MUST be flush-left at the enclosing indent. Cuddled control flow blocks MUST NOT be used. The closing brace of the preceding block MUST sit on its own line, and subsequent blocks (e.g., `else`, `catch`) MUST begin on the next line. Single-line constructs like `} else {` MUST NOT be used. Folded function signatures (mutl-line function signatures) is HIHGLY
+**Braces carry the structure.** K&R braces MUST be used: the opening brace MUST be on the same line as the enclosing declaration or control keyword, and the closing brace MUST be flush-left at the enclosing indent. Cuddled control flow blocks MUST NOT be used. The closing brace of the preceding block MUST sit on its own line, and subsequent blocks (e.g., `else`, `catch`) MUST begin on the next line. Single-line constructs like `} else {` MUST NOT be used. Folded function signatures (multi-line function signatures) is HIGHLY
 DISCOURAGED without valid reason. Folded function calls MAY be used. Comments before braced statements are RECOMMENDED and MUST NOT be written after the opening brace. Inline comments MAY be used.
 
 **Whitespace is rhythm.** 4-space indentation MUST be used. Blank lines are RECOMMENDED to separate logical groups between members, methods, control blocks, and operational phases. A good engineer chunks a file by its blank-line rhythm. Do not pack statements together or stack members with no separation.
 
-**Naming is architecture.** Type names, methods, properties, enums, enum members, locals and parameters MUST be conistent. Multi-statement bodies MUST ALWAYS be braced, though single-expression guard clauses MAY be a single unbraced line. Prefer expression-bodied forms for one-liners. Redundant access modifiers are DISCOURAGED.
+**Naming is architecture.** Type names, methods, properties, enums, enum members, locals and parameters MUST be consistent. Multi-statement bodies MUST ALWAYS be braced, though single-expression guard clauses MAY be a single unbraced line. Prefer expression-bodied forms for one-liners. Redundant access modifiers are DISCOURAGED.
 
 **Documentation is strictly scoped.** Public API SHOULD be documented. Internal implementations MUST NOT be cluttered with redundant comments. Related members SHOULD be grouped using block comments and section dividers, encoding something true about the code structure rather than merely decorating it.
 
@@ -54,7 +54,7 @@ internal class DataProcessor : IService {
     /// <summary>
     /// Processes the specified payload and returns the result.
     /// </summary>
-    /// <exception cref="ArgumentNullException">A null argument was provided.</throws>
+    /// <exception cref="ArgumentNullException">A null argument was provided.</exception>
     public async Task<Result> Process(Payload payload, CancellationToken cancelToken = default) {
         if (payload == null) throw new ArgumentNullException(nameof(payload));
 
@@ -191,7 +191,7 @@ pub struct DataPayload {
 
 pub fn process_payload(payload: &mut DataPayload) -> Result<(), ProcessingError> {
     // Single-expression guard clauses MAY be unbraced.
-    if payload.content.is_empty()) return Err(ProcessingError::EmptyPayload);
+    if payload.content.is_empty() return Err(ProcessingError::EmptyPayload);
 
     if payload.content.len() > 100 {
         transform(payload)?;
