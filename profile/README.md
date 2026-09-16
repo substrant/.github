@@ -1,4 +1,4 @@
-We build the tools and frameworks that make development faster, more flexible, and a little more fun. Whether it’s advanced tooling for a niche case, streamlining your development workflows, solving real-world problems when developing your applications, or managing pipelines, we've got you covered. From system-level libraries to sleek frontends, we handle the hard stuff so developers can focus on building the next big thing.
+Substrant works across architecture, systems, and operating environments to make technically demanding software clearer, more resilient, and easier to sustain. Our company also offers various SaaS applications for specific niches.
 
 Visit us at [substrant.com](https://substrant.com/)
 
